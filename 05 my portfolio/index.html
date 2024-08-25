@@ -6,104 +6,132 @@
     <title>05 My portofolio</title>
 </head>
 <body>
-    <h1>welcome to my portfolio</h1>
+    <header>
+        <h1>welcome to my portfolio</h1>
 
-    <a href="">
-        <button>
-            About
-        </button>
-    </a>
-
-    <a href="">
-        <button>
-            Skills
-        </button>
-    </a>
-
-    <a href="">
-        <button>
-            Projects
-        </button>
-    </a>
-
-    <a href="">
-        <button>
-            Contact
-        </button>
-    </a>
-
-    <h1>PATAN ASLAMKHAN</h1>
-
-    <img src="6voejex8.png" width="200" height="">
-
-    <P>I am a passionate web development with a focus on front end technologies</P>
-
-    <p>I am currently pursuing B.Tech in <i>ABR COLLAGE OF ENGINNERING AND TECHNOLOGY KANIGIRI</i></p>
-
-    <P>I have learnt WEB DEVELOPMENT from<br>
-    Code with swaroop</p>
-
-    <p>You can <b>Click here</b> to Checkout what i have learnt in HTML,CSS,JS</p>
-
-    <h1>My Skills</h1>
-
-    <ol>
-        <li>HTML Basics</li>
-        <li>css Basics</li>
-        <li>Javascript Basics</li>
-    </ol>
-
-    <h1>Contact Me</h1>
-
-    <p>Feel free to get in touch with me using the form below:</p>
-
-    <form action="">
-
-    <fieldset>
-
-    <legend>ENTER YOUR DETAILS</legend>
-
-    <label for="name">User Name:</label>
-    <input type="text" id="name" name="name" placeholder="username" required>
-
-    <br><br>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="Email" required>
-
-    <br><br>
-
-    <label>Choose your gender:</label>
-
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="male">Male</label>
-
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Female</label>
-
-    <br><br>
-
-    <label>Select your interests:</label>
-    <input type="checkbox" id="coding" name="interests" value="coding">
-    <label for="coding">Coding</label>
-
-    <input type="checkbox" id="reading" name="interests" value="reading">05 my portfolio/index.html
-    <label for="reading">Reading</label>
-
-    <br><br>
-
-    <label for="textarea">Bio (up to 200 characters);</label>
-    <textarea id="textarea" name="Bio" rows="" cols="">
-
-    </textarea>
-
-    <br><br>
-
-    <button type="submit">submit</button>
-
-    </fieldset>
-
-    </form>
+        <a href="">
+            <button>
+                About
+            </button>
+        </a>
     
+        <a href="">
+            <button>
+                Skills
+            </button>
+        </a>
+    
+        <a href="">
+            <button>
+                Projects
+            </button>
+        </a>
+    
+        <a href="">
+            <button>
+                Contact
+            </button>
+        </a>
+    
+    </header>
+
+    <main>
+        <sectoin id="about">
+            <h1>PATAN ASLAMKHAN</h1>
+    
+            <img src="6voejex8.png" width="200" height="">
+        
+            <P>I am a passionate web development with a focus on front end technologies</P>
+        
+            <p>I am currently pursuing B.Tech in <i>ABR COLLAGE OF ENGINNERING AND TECHNOLOGY KANIGIRI</i></p>
+        
+            <P>I have learnt WEB DEVELOPMENT from<br>
+            Code with swaroop</p>
+        
+            <p>You can <b>Click here</b> to Checkout what i have learnt in HTML,CSS,JS</p>
+        </sectoin>
+    
+        <section id="skills">
+            <h1>My Skills</h1>
+    
+            <ol>
+               <li>HTML Basics</li>
+               <li>css Basics</li>
+               <li>Javascript Basics</li> 
+            </ol>     
+        </section>
+    
+        <section id="project">
+            <h1>My Projects</h1>
+        
+            <table border="2">
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                </tr>
+        
+                <tr>
+                    <td>Portfolio website</td>
+                    <td>I have built portfolio website by using HTML,CSS & Javascript</td>
+                </tr>
+        
+                <tr>
+                    <td>Python simple calculator</td>
+                    <td>I have built a simple calculator in the course by code with swaroop</td>
+                </tr>
+            </table>
+        </section>
+    
+        <section id="contact">
+            <h1>Contact Me</h1>
+        
+            <p>Feel free to get in touch with me using the form below:</p>
+        
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="name" required>
+            
+                <br><br>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            
+                <br><br>
+            
+                <label>Choose your gender:</label>
+            
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+            
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            
+                <br><br>
+            
+                <label>Select your interests:</label>
+                <input type="checkbox" id="coding" name="interests" value="coding">
+                <label for="coding">Coding</label>
+            
+                <input type="checkbox" id="reading" name="interests" value="reading">05 my portfolio/index.html
+                <label for="reading">Reading</label>
+            
+                <br><br>
+            
+                <label for="textarea">Bio (up to 200 characters);</label>
+                <textarea id="textarea" name="Bio" rows="" cols="">
+            
+                </textarea>
+            
+                <br><br>
+            
+                <button type="submit">submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        © 2024 my portfolio
+    </footer>
+
 </body>
 </html>
