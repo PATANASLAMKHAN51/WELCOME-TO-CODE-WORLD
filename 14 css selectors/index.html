@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14 css selectors</title>
+    <style type="text/css">
+        p{
+            color:blue;
+        }
+
+        #id{
+            color:red;
+        }
+
+        .class{
+            color:green;
+        }
+
+        div h2{
+            color:orange;
+        }
+
+        div h2>b{
+            color:pink;
+        }
+
+        div+h2{
+            color:brown;
+        }
+
+        div~p{
+            color:blueviolet;
+            font-size:27px;
+        }
+
+         /* unvisited link */
+        a:link{
+          color: #FF0000;
+        }
+
+         /* visited link */
+        a:visited{
+          color: #00FF00;
+        }
+
+         /* mouse over link */
+        a:hover{
+          color: #FF00FF;
+        }
+
+         /* selected link */
+        a:active{
+          color:#0000FF;
+        }
+
+        ul li::before{
+            content:"👌";
+        }
+
+        ul li::after{
+            content:"👍";
+        }
+
+        #h1::first-letter{
+            color:red;
+        }
+
+        #h1::first-line{
+            color:blue;
+        }
+
+        button[type]{
+           background-color:blue;
+        }
+
+        button[type=submit]{
+           background-color:red;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>simple selector :-</h1>
+
+    <h2><p>element selector</p></h2>
+
+    <h2 id="id">id selector</h2>
+
+    <h2 class="class">class selector</h2>
+
+    <h1>combinators selector</h1>
+
+    <div>
+    <h2>descendant selector (space)</h2>
+
+    <h2><b>child selector</b></h2>
+    </div>
+
+    <h2>adjacent sibling selector</h2>
+
+    <p>general sibling selector</p>
+
+    <p>The general sibling selector (~) selects all elements that are next siblings of a specified element.</p>
+
+    <h1>pseudo classes selector</h1>
+
+    <pre>
+    <a href="###">link</a>
+
+    <a href="###">hover</a>
+
+    <a href="###">active</a>
+
+    <a href="###">visted</a>
+    </pre>
+
+    <h1 id="h1">pseudo element selector</h1>
+
+    <ul>
+       <li>::before</li>
+       <li>::after</li>
+       <li>::first-leater</li>
+       <li>::first-line</li> 
+    </ul>
+
+    <h1>attribute selector</h1>
+
+    <button type="reset">reset</button>
+
+    <br/><br/>
+
+    <h1>[attribute = value] selector</h1>
+
+    <button type="submit">submit</button>
+
+
+</body>
+</html>
