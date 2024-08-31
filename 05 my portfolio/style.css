@@ -3,13 +3,20 @@
 }
 body{
     margin:0;
+    background-color: aliceblue;
+    font-size: 15px;
 }
 header{
     height:100vh;
-    color:white;
     background-color: aqua;
+    border-radius: 10px;
+}
+h1{
+    color: #2196f3;
+    font-size: 50px;
 }
 header h1{
+    color: snow;
     margin:0;
 }
 .button{
@@ -17,10 +24,72 @@ header h1{
     width:140px;
     border: none;
     border-radius: 10px;
+    background-color: aquamarine;
     cursor:pointer;
+    font-size: large;
+    font-weight: bold;
 }
 .button:hover{
     color: white;
+    background-color: #2196f3;
+}
+img{
+    height: 200px;
+}
+main{
+    padding:20px;
+}
+section{
+    height:100vh;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: azure;
+}
+input{
+    height: 25px;
+    border-radius: 5px;
+    border-color: aqua;
+}
+input:hover{
+    border-color: #2196f3;
+}
+textarea{
+    border-radius: 5px;
+    border-color: aqua;
+}
+textarea:hover{
+    border-color: #2196f3;
+}
+button[type=submit]{
+    height: 40px;
+    width: 140px;
+    color: black;
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+}
+button[type=submit]:hover{
+    color:white;
+    background-color:#2196f3;    ;
+}
+.topbutton{
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    bottom: 0%;
+    right: 2%;
+    border-color: grey;
+    border-radius: 50px;
+    color: #2196f3;
     background-color: black;
+    font-size: 20px;
+
+}
+footer{
+    height: 100px;
+    color: grey;
+    background-color: black;
+    border-radius: 5px;
 }
 
