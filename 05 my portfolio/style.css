@@ -1,0 +1,26 @@
+*{
+    font-family:'Courier New', Courier, monospace;
+}
+body{
+    margin:0;
+}
+header{
+    height:100vh;
+    color:white;
+    background-color: aqua;
+}
+header h1{
+    margin:0;
+}
+.button{
+    height:40px;
+    width:140px;
+    border: none;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.button:hover{
+    color: white;
+    background-color: black;
+}
+
