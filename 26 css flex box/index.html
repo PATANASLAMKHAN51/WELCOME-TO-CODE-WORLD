@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26 css flex box</title>
+    <style type="text/css">
+        #aa{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        div .a{
+            background-color: aqua;
+        }
+        div .b{
+            background-color: blueviolet;
+        }
+        div .c{
+            background-color: blue;
+        }
+        #bb{
+            width: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: palevioletred;
+        }
+        #cc{
+            display: flex;
+            flex-flow: wrap row;
+            width: 80px;
+            background-color: blue;
+        }
+        #dd{
+            height: 80px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: brown; 
+        }
+        #ee{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: aqua;
+            height: 80px;
+        }
+        #ff{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: space-evenly;
+            background-color: khaki;
+            height: 80px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-direction</h1>
+  <div id="aa">  
+    <div class="a">
+        flex-direction
+    </div>
+
+    <div class="b">
+        flex-direction
+    </div>
+
+    <div class="c">
+        flex-direction
+    </div>
+  </div>
+
+  <br> <br> <br>
+  
+  <h1>flex-wrap</h1>
+
+  <div id="bb">
+    <div>flex-wrap</div>
+    <div>flex-wrap</div>
+    <div>flex-wrap</div>
+  </div>
+
+  <h1>flex-flow</h1>
+
+  <div id="cc">
+    <div>flex-flow</div>
+    <div>flex-flow</div>
+    <div>flex-flow</div>
+  </div>
+
+  <h1>justify-content</h1>
+
+  <div id="dd">
+    <div>justify-content</div>
+    <div>justify-content</div>
+    <div>justify-content</div>
+  </div>
+
+  <h1>align-items</h1>
+
+  <div id="ee">
+    <div>align-items</div>
+    <div>align-items</div>
+    <div>align-items</div>
+  </div>
+
+  <h1>align-content</h1>
+
+  <div id="ff">
+    <div>align-content</div>
+    <div>align-content</div>
+    <div>align-content</div>
+    <div>align-content</div>
+    <div>align-content</div>
+  </div>
+
+</body>
+</html>
