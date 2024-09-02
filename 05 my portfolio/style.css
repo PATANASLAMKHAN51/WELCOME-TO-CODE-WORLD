@@ -10,6 +10,11 @@ header{
     height:100vh;
     background-color: aqua;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 h1{
     color: #2196f3;
@@ -24,13 +29,14 @@ header h1{
     width:140px;
     border: none;
     border-radius: 10px;
+    color: #2196f3;
     background-color: aquamarine;
     cursor:pointer;
     font-size: large;
     font-weight: bold;
 }
 .button:hover{
-    color: white;
+    color: aquamarine;
     background-color: #2196f3;
 }
 img{
@@ -45,6 +51,10 @@ section{
     border-radius: 20px;
     margin-bottom: 20px;
     background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 input{
     height: 25px;
@@ -64,13 +74,15 @@ textarea:hover{
 button[type=submit]{
     height: 40px;
     width: 140px;
-    color: black;
-    background-color: aqua;
+    font-size: large;
+    font-weight: bold;
+    color: #2196f3;
+    background-color: aquamarine;
     border: none;
     border-radius: 10px;
 }
 button[type=submit]:hover{
-    color:white;
+    color: aquamarine;
     background-color:#2196f3;    ;
 }
 .topbutton{
@@ -91,5 +103,9 @@ footer{
     color: grey;
     background-color: black;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
