@@ -12,8 +12,10 @@ header{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 0px 10px;
 
 }
 h1{
@@ -39,6 +41,9 @@ header h1{
     color: aquamarine;
     background-color: #2196f3;
 }
+a{
+    text-decoration: none;
+}
 img{
     height: 200px;
 }
@@ -53,8 +58,13 @@ section{
     background-color: azure;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 0px 10px;
+}
+#about{
+    height: 120vh;
 }
 input{
     height: 25px;
