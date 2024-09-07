@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>46 js condition (ternary) operator</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var a=100;
+        var b
+
+        (a==100)? b="true" : b="false";
+        document.write(b);
+
+        b=(a==100)? "true" : "false";
+        document.write("</br></br>"+b);
+
+        b="value is "+(a==100? "true" : "false");
+        document.write("</br></br>"+b);
+
+        (a==100)? document.write("</br></br>true") : document.write("</br></br>false");
+
+        var a=100;
+        var b
+        if (a==100){
+            document.write("</br></br>value is "+(b="true"));
+        }else{
+            document.write("</br></br>value is "+(b="false"));
+        }
+    </script>
+</body>
+</html>
