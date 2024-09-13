@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>65 multidimensional arrays</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var arry=[
+            ["harry",18,"male","BCA"],
+            ["ram",18,"male","BCA"],
+            ["gopi",18,"male","BCA"],
+            ["babu",18,"male","BCA"]
+        ]
+        document.write("<table border='1'>");
+
+        for(a=0; a<arry.length; a++){
+            document.write("<tr>")
+                for(b=0; b<arry[a].length; b++){
+            document.write("<td>" +arry[a][b]+ "</td>" +"</br>");
+                }
+            document.write("</tr>")
+        }
+        document.write("</table");
+    </script>
+</body>
+</html>
