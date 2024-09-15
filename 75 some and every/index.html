@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>75 some and every</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var age=[20,19,15,12];
+        document.write(age + '</br></br>');
+
+        function adult(age){
+            return age>=18;
+        }
+        
+        var b=age.some(adult);
+        document.write(b +'</br></br>');
+
+        var age=[20,15,12,18];
+        document.write(age + '</br></br>');
+
+        function adult(age){
+            return age>=18;
+        }
+        
+        var b=age.every(adult);
+        document.write(b);
+    </script>
+</body>
+</html>
