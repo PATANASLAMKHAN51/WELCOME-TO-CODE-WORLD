@@ -3,31 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>75 some and every</title>
+    <title>76 find and findindex</title>
 </head>
 <body>
     <script type="text/javascript">
-        //some
-        var age=[20,19,15,12];
+        //find
+         var age=[12,19,15,12];
         document.write(age + '</br></br>');
 
         function adult(age){
             return age>=18;
         }
         
-        var b=age.some(adult);
+        var b=age.find(adult);
         document.write(b +'</br></br>');
-
-        //every
-        var age=[20,15,12,18];
+        //findIndex
+        var age=[12,19,15,12];
         document.write(age + '</br></br>');
 
         function adult(age){
             return age>=18;
         }
         
-        var b=age.every(adult);
-        document.write(b);
+        var b=age.findIndex(adult);
+        document.write(b +'</br></br>');
     </script>
 </body>
 </html>
