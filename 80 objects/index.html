@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>80 objects</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var a={
+            fname:'Yahoo',
+            lname:'Baba',
+            Favmovies:['col','space','mount'],
+            living:{
+                'city':'Chandhigar',
+                'country':'India'
+            },
+            fullname:function(){
+                return this.fname+' '+this.lname
+            }
+        }
+        document.write(a.fname +'</br></br>');
+        document.write(a.Favmovies[1]+'</br></br>');
+        document.write(a.living.city+'</br></br>');
+        document.write(a.fullname());
+    </script>
+</body>
+</html>
