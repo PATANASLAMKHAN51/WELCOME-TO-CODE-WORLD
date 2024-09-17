@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>83 js const with Array and Object</title>
+</head>
+<body>
+    <script type="text/javascript">
+        const a=[10,20,30];
+        //a=30; ->its not worked
+        //a=[40,50,60];
+        a[1]=25;
+        a[2]=35;
+        document.write(a +'</br></br>');
+
+        const b={
+            name:'ram',
+            age:'25'
+        };
+        /*const b={
+            name:'karan',
+            age:25
+        };*///its not worked
+        b.name='yahoo babo';
+        document.write(b.name);
+    </script>
+</body>
+</html>
