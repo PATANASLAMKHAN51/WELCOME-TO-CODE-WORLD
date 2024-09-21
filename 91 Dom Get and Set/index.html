@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>91 Dom Get and Set</title>
+</head>
+<body>
+        <div id='header' class='abc' style='border:1px solid red' onclick='xyz(0)'>
+            <h1 style=color:red; >Yahoo Baba</h1>
+
+         </div> 
+
+         <div id='setmethods' class='abc' style='border:1px solid red' onclick='xyz(0)'>
+            <h1 style=color:red; >Yahoo Baba</h1>
+
+         </div> 
+         <script type="text/javascript">
+            //innerText
+            var a=document.getElementById('header').innerText;
+            console.log(a);
+            document.write(a);
+            //innerHTML
+            var a=document.getElementById('header').innerHTML;
+            console.log(a);
+            document.write(a);
+            //getAttribute
+            var a=document.getElementById('header').getAttribute('style');
+            console.log(a);
+            document.write(a);
+            document.write('</br></br>');
+            //getAttributeNode
+            var a=document.getElementById('header').getAttributeNode('style');
+            console.log(a);
+            document.write(a);
+            document.write('</br></br>');
+            //attributes
+            var a=document.getElementById('header').attributes;
+            console.log(a);
+            document.write(a);
+            document.write('</br></br>');
+            //attributes[]
+            var a=document.getElementById('header').attributes[2];
+            console.log(a);
+            document.write(a);
+            document.write('</br></br>');
+            //attributes[].name
+            var a=document.getElementById('header').attributes[2].name;
+            console.log(a);
+            document.write(a);
+            document.write('</br></br>');
+            //attribute[].value
+            var a=document.getElementById('header').attributes[2].value;
+            console.log(a);
+            document.write(a);
+            document.write('</br></br>');
+            
+                                 //Set Methods
+
+            //innerText=;
+            var b=document.getElementById('setmethods').innerText='Setmethods';
+            console.log(b);
+            document.write(b);
+
+            //innerHTML
+            var c=document.getElementById('setmethods').innerHTML='<h1>innerHTML</h1>';
+            console.log(c);
+            document.write(c);
+            
+            //setAttribute
+            var e=document.getElementById('setmethods').setAttribute("style","border:3px solid red");
+            console.log(e);
+            document.write(e);
+
+            //attributes[].value
+            var f=document.getElementById('setmethods').attributes[1].value="def";
+            console.log(f);
+            document.write(f);
+
+            //removeAttrribute
+            var g=document.getElementById('setmethods').removeAttribute('style');
+            console.log(g);
+            document.write(g);
+         </script>
+</body>
+</html>
