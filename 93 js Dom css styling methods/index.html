@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>93 js Dom css styling methods</title>
+</head>
+<body>
+    <div id="header" class="abc" style="border:1px solid red">
+        <h1>Yahoo Baba</h1>
+    </div>
+    <script type="text/javascript">
+        //style
+        document.querySelector('#header').style.color='blue';
+        var a=document.querySelector('#header').style.color;
+        console.log(a);
+
+        //className
+        document.querySelector('#header').className=('xyz efj');
+        var a=document.querySelector('#header').className;
+        console.log(a);
+
+        //classList
+        document.querySelector('#header').classList.add('aaa','bbb');
+        var a=document.querySelector('#header').classList;
+        console.log(a);
+        
+    </script>
+</body>
+</html>
