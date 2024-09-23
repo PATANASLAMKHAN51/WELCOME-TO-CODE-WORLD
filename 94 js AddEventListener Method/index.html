@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>94 js AddEventListener Method</title>
+    <style type="text/css">
+        #add{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height:50vh;
+            min-width: 100px;
+            background-color: aqua;
+        }
+        #add div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+            min-height:100px;
+            width:400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="add">
+        <div id="remove">
+            94 js AddEventListener Method
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        document.querySelector('#add').onclick=click;
+        function click(){
+            document.getElementById("add").style.background='black';
+        };
+
+        document.getElementById('add').addEventListener("mouseenter",function(){
+            document.querySelector('#add').style.background='red';
+        });
+
+        document.getElementById('add').addEventListener('mouseout',ra)
+        function ra(){
+            this.style.background='aqua';
+        };
+
+        document.getElementById('remove').addEventListener('mouseenter',remove);
+
+        function remove(){
+            document.getElementById('add').removeEventListener('mouseout',ra);
+        }
+    </script>
+</body>
+</html>
