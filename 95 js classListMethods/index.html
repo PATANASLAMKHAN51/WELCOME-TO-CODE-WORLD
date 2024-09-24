@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>95 js classListMethods</title>
+    <style type="text/css">
+        .unic{
+            height: 10vh;
+            background-color: green;
+        }
+        .uu{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="cl" onclick="aa()" class="bbb">
+        <h1>
+            classListMethods
+        </h1>
+    </div>
+    <script type="text/javascript">
+        //classList.add
+        document.getElementById('cl').classList.add('unic','uu');
+        var a=document.getElementById('cl').classList;
+        console.log(a);
+        //classList.remove
+        document.getElementById('cl').classList.remove('uu');
+        var a=document.getElementById('cl').classList;
+        console.log(a);
+        //classList.toggle
+        function aa(){
+        document.getElementById('cl').classList.toggle('unic');
+        var b=document.getElementById('cl').classList;
+        console.log(b);
+        }
+        //classList.length
+        var a=document.getElementById('cl').classList.length
+        console.log(a);
+        //classList.contains
+        var a=document.getElementById('cl').classList.contains('unic');
+        console.log(a);
+        //classlist.item(index)
+        var a=document.getElementById('cl').classList.item(1);
+        console.log(a);
+        
+    </script>
+</body>
+</html>
