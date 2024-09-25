@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>101 js appendchild insertBefore()</title>
+</head>
+<body>
+     <div id="app">
+        <b>javascript</b>
+     </div>
+
+     <script type="text/javascript">
+        //appendChild
+        var a=document.createElement('h1');
+        var b=document.createTextNode('important');
+        a.appendChild(b);
+        document.getElementById('app').appendChild(a);
+        //insertBefore();
+        var c=document.getElementById('app');
+            c.insertBefore(a,c.childNodes[0]);
+     </script>
+</body>
+</html>
