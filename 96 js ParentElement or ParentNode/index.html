@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>96 js ParentElement or ParentNode</title>
+</head>
+<body>
+    <div id="pa">
+        <h1>ParentElement</h1>
+        <div id="ch">
+            <h1>ParentNode</h1>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        //parentElement
+        document.getElementById('ch').parentElement.style.background='red';
+        var a=document.getElementById('ch').parentElement;
+        console.log(a);
+        //parentNode
+        var b=document.getElementById("html").parentNode;
+        console.log(b);
+
+    </script>
+</body>
+</html>
