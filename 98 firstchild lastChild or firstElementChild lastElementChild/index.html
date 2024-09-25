@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>98 firstchild lastChild or firstElementChild lastElementChild</title>
+</head>
+<body>
+    <div id="pa">
+        <h1>first</h1>
+        <div id="ch">
+            <h1>last</h1>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        //firstChild
+        var a=document.getElementById('pa').firstChild;
+        console.log(a);
+        //lastChild
+        var b=document.getElementById("pa").lastChild;
+        console.log(b);
+        //firstElementChild
+        var a=document.getElementById('pa').firstElementChild;
+        console.log(a);
+        //lastChild
+        var b=document.getElementById("pa").lastElementChild;
+        console.log(b);
+
+    </script>
+</body>
+</html>
