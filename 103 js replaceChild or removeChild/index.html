@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>103 js replaceChild or removeChild</title>
+</head>
+<body>
+    <ul id="re">
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+        <li>stop</li>
+    </ul>
+
+    <script type="text/javascript">
+        //replaceChild
+        var a=document.createElement('li');
+        var b=document.createTextNode('html555555');
+        a.appendChild(b);
+
+        var ul=document.getElementById('re');
+        var html=ul.children[0];
+        ul.replaceChild(a,html);
+        //removeChild
+        var ul=document.getElementById('re');
+        var stop=ul.children[3];
+        ul.removeChild(stop);
+    </script>
+</body>
+</html>
