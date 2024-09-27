@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>107 isEqualNode</title>
+</head>
+<body>
+    <ul id="list1">
+        <li>orange</li>
+        <li>bannana</li>
+    </ul>
+
+    <ol id="list2">
+        <li>orange</li>
+        <li>bannana</li>
+    </ol>
+
+    <script type="text/javascript">
+        var list1=document.getElementById('list1').children[0];
+        var list2=document.getElementById('list2').children[0];
+
+        var result=list1.isEqualNode(list2);
+        console.log(result);
+
+
+        
+    </script>
+</body>
+</html>
