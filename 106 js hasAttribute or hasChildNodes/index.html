@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>106 js hasAttribute or hasChildNodes</title>
+</head>
+<body>
+    <div id="pa" style=color:blue;>
+        <h1>first childeNodes</h1>
+    </div>
+
+    <script type="text/javascript">
+        //hasAttribute
+        var pa=document.getElementById('pa');
+        var at=pa.hasAttribute('style');
+        console.log(at);
+        //hasChildNodes
+        var at=pa.hasChildNodes();
+        console.log(at);
+    </script>
+</body>
+</html>
