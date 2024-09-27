@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>104 js cloneNode</title>
+</head>
+<body>
+    <ul id="list1">
+        <li>apple</li>
+        <li>mango</li>
+        <li>orange</li>
+    </ul>
+
+    <ul id="list2">
+        <li>apple</li>
+        <li>mango</li>
+    </ul>
+
+    <script type="text/javascript">
+        var ul=document.getElementById('list1');
+        var target=ul.children[2];
+        var clone=target.cloneNode(true);
+
+        document.getElementById('list2').appendChild(clone);
+    </script>
+</body>
+</html>
