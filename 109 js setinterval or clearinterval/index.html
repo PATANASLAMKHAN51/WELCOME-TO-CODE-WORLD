@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>109 js setinterval or clearinterval</title>
+    <style>
+        #a{
+            height: 150px;
+            width: 150px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div id="a"></div>
+
+    <script type="text/javascript">
+        a=0;
+        
+        var stop=setInterval(aim,100);
+
+        function aim(){ 
+            a=a + 10;
+            if(a == 200){
+                clearInterval(stop);
+            }
+            else{
+            var div=document.getElementById('a');
+            div.style.marginLeft=a + 'px';
+            }
+        }
+    </script>
+</body>
+</html>
