@@ -6,8 +6,20 @@
     <title>108 js FormEvents</title>
 </head>
 <body>
-    <label>Name</label><input type="text" onfocus="Focus(this)" onblur="Blur(this)" oninput="inputvalue(this)"></br></br>
+    <form onsubmit="ubmit()">
+    <label>Name</label><input type="text" onfocus="Focus(this)" onblur="Blur(this)" oninput="inputvalue(this)" onselect="Select(this)" oninvalid='Invalid(this)' required></br></br>
     <label>number</label><input type="number" onfocus="Focus(this)"></br></br>
+
+    <select onchange="Change(this)">
+        <option>india</option>
+        <option>usa</option>
+    </select>
+    <br><br>
+    <button type="submit">SUBMIT</button>
+    </form>
+
+    <br><br>
+
     <div id="div" style="border: 1px solid green;"></div>
 
     <script type="text/javascript">
@@ -23,6 +35,22 @@
         function inputvalue(element){
             var x=element.value;
             document.getElementById('div').innerText=x;
+        }
+        //onchange
+        function Change(element){
+            confirm('change the option')
+        }
+        //onselect
+        function Select(){
+            confirm('selected some letters')
+        }
+        //onsubmit
+        function Submit(){
+            alert('form submited')
+        }
+        //oninvalid
+        function Invalid(element){
+            alert('tise is invalid name')
         }
     </script>
 </body>
