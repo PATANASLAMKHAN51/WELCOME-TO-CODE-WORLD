@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>112 js window open and close</title>
+</head>
+<body>
+    <button onclick="OP()">windowopen</button>
+    <button onclick="CLEAR()">windowclose</button>
+
+    <script type="text/javascript">
+        var stop;
+        function OP(){
+            stop=window.open('http://www.yahoobaba.net','','height=250px,width=400px,top=300px,left=300px');
+        }
+
+        function CLEAR(){
+            stop.close();
+        }
+    </script>
+</body>
+</html>
