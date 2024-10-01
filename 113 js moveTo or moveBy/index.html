@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>113 js moveTo or moveBy</title>
+</head>
+<body>
+    <button onclick="New()">openwindow</button>
+    <button onclick="tospace()">Tospace</button>
+    <button onclick="byspace()">Byspace</button>
+
+    <script type="text/javascript">
+        //window.open
+        var wind
+        function New(){
+          wind=window.open("","","width=500px,height=500px");
+        }
+        //window.moveTo
+        function tospace(){
+            wind.moveTo(200,200);
+        }
+        //window.moveBy
+        function byspace(){
+            wind.moveBy(10,10);
+        }
+
+
+        
+    </script>
+</body>
+</html>
