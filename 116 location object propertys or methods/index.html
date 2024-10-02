@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>116 location object propertys or methods</title>
+</head>
+<body>
+    <script type="text/javascript">
+                   //location object properties
+        //hash
+        document.write('hash :' + location.hash + '<br><br>');
+        console.log(location.hash);
+        //host
+        document.write('host :' + location.host + '<br><br>');
+        console.log(location.host);
+        //hostname
+        document.write('hostname :' + location.hostname + '<br><br>');
+        console.log(location.hostname);
+        //href
+        document.write('href :' + location.href + '<br><br>');
+        console.log(location.href);
+        //origin
+        document.write('origin :' + location.origin + '<br><br>');
+        console.log(location.origin);
+        //patname
+        document.write('patname :' + location.patname + '<br><br>');
+        console.log(location.patname);
+        //port
+        document.write('port :' + location.port + '<br><br>');
+        console.log(location.port);
+        //protocol
+        document.write('protocol :' + location.protocol + '<br><br>');
+        console.log(location.protocol);
+        //search
+        document.write('search :' + location.search + '<br><br>');
+        console.log(location.search);
+
+                     //location objecty methods
+        //assign()            
+        function ass(){            
+        location.assign("http://www.yahoobaba.net");
+        }    
+        //reload
+        function Lo(){              
+        location.reload();
+        }        
+        //replace
+        function pl(){              
+        location.replace("http://www.yahoobaba.net");
+        }            
+    </script>
+    <button onclick="ass()">location.assign</button>
+
+    <button onclick="Lo()">location.reload</button>
+
+    <button onclick="pl()">location.replace</button>
+
+</body>
+</html>
