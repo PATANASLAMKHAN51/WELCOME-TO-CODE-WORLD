@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>117 js BOM history</title>
+</head>
+<body>
+    <button onclick="backfunction()">BACK</button>
+    <button onclick="forwardfunction()">FORWORD</button><br><br><br><br>
+    <script type="text/javascript">
+                 //History Properties
+        //History
+        document.write(history.length);
+        console.log(history.length);
+
+                //History Methods
+        //back()
+        function backfunction(){
+            history.back();
+        }
+        //forword
+        function forwardfunction(){
+            history.forward();
+        }
+
+    </script>
+</body>
+</html>
