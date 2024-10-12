@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=width=device-width, initial-scale=1.0">
+    <title>126 js screenX or screenY</title>
+    <style>
+        #box{
+            height: 300px;
+            width: 300px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        var BOX=document.getElementById('box');
+        
+        BOX.addEventListener('mousemove',function (e){
+            console.clear()
+
+            console.log('screenX '+ e.screenX);
+            console.log('screenY '+ e.screenY);
+        })
+    </script>
+</body>
+</html>
