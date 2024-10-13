@@ -7,15 +7,22 @@
 </head>
 <body>
     <script type="text/javascript">
-        var g="global";
+        const g="global";
         function gl(){
-            var l="local";
+            const L="local";
             document.write(g);
-            document.write("</br>"+l);
+            document.write("</br>"+L);
         }
         gl();
-        document.write("</br>"+ g);
-        document.write(l);
+        //document.write(L);
+        document.write("</br>"+ g +'<br><br>');
+        
+           var m=10;
+        if(m == 10){
+            let k='ok';
+            document.write(k);
+        }
+        document.write(k);
     </script>
 </body>
 </html>
