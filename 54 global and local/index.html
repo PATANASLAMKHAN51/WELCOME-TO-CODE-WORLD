@@ -7,22 +7,31 @@
 </head>
 <body>
     <script type="text/javascript">
-        const g="global";
+        //function
+        var g="global";
         function gl(){
-            const L="local";
-            document.write(g);
-            document.write("</br>"+L);
+
+            document.write(g+'<br>');
+
+            let L="local";
+          
+            //document.write("</br>"+L+ '<br><br>');
         }
         gl();
-        //document.write(L);
-        document.write("</br>"+ g +'<br><br>');
+        L='k'
+        document.write(L +'<br>'); //it not warked
         
+        //coundition
            var m=10;
         if(m == 10){
-            let k='ok';
-            document.write(k);
+            document.write(g +'<br><br>');
+
+            let Lo='cundition local';
+
+            //document.write(Lo +'<br><br>');
         }
-        document.write(k);
+        Lo='c';
+        document.write(Lo);
     </script>
 </body>
 </html>
