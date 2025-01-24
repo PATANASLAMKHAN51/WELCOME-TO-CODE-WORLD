@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>128 128 ctrlkey,shiftkey,altkey,metakey</title>
+</head>
+<body>
+    <div style="margin-bottom: 80px; height: 200px; width: 200px; background-color: aquamarine;"></div>
+    <input type="text" placeholder="name" style="background-color: aquamarine;">
+
+    <script type="text/javascript">
+        let div=document.querySelector('div');
+        let input=document.querySelector('input')
+
+        div.addEventListener('click',function(e){
+            switch (true){
+                case e.ctrlKey:
+                    div.innerText='its a ctrlkey';
+                    break;
+
+                case e.shiftKey:
+                    div.innerText='its a shiftKey';
+                    break;
+
+                case e.altKey:
+                    div.innerText='its a altKey';
+                    break;
+
+                case e.metaKey:
+                    div.innerText='its a metaKey';
+                    break;
+
+                default:
+                    div.innerText='you pressed other key';
+            }
+        });
+    </script>
+</body>
+</html>
