@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>130 e.key</title>
+</head>
+<body>
+    <div style="height: 400px; width: 400px; background-color: brown; font-size: 300px;"></div>
+
+<script>
+    const div = document.querySelector('div');
+
+    document.addEventListener('keyup', function(e){
+
+        div.style.margin='100px'
+        
+        div.innerHTML = e.key
+    
+    });
+
+</script>
+</body>
+</html>
