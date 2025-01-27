@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>131 cut,copy,paste,events</title>
+</head>
+<body>
+    <input type="text" id="input" style='height:100px; width:100px;'>
+
+    <script>
+        let input=document.querySelector('input');
+
+        window.addEventListener('copy',function(){
+            input.style.background='pink';
+            alert('you coped');
+        });
+
+        window.addEventListener('cut',function(){
+            input.style.background='pink';
+            alert('you cuted');
+        });
+
+        window.addEventListener('paste',function(){
+            input.style.background='pink';
+            alert('you pasted');
+        })
+    </script>
+</body>
+</html>
