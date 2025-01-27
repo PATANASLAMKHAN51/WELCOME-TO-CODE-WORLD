@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>132 Online and Offline Events</title>
+</head>
+<body>
+    <script>
+
+function checkConnectionStatus() {
+            if (navigator.onLine) {
+                alert('You are online');
+            } else {
+                alert('You are offline');
+            }
+        }
+
+        // Checking connection status when page loads
+        window.addEventListener('load', checkConnectionStatus);
+
+        window.addEventListener('online', function() {
+            alert('You are now online');
+        });
+
+        window.addEventListener('offline', function() {
+            alert('You are now offline');
+        });
+    </script>
+</body>
+</html>
